@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68CA1C6829843D65008F4036 /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C6729843D65008F4036 /* WeatherAppApp.swift */; };
+		68CA1C6829843D65008F4036 /* WeatheryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C6729843D65008F4036 /* WeatheryApp.swift */; };
 		68CA1C6A29843D65008F4036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C6929843D65008F4036 /* ContentView.swift */; };
 		68CA1C6C29843D67008F4036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA1C6B29843D67008F4036 /* Assets.xcassets */; };
 		68CA1C6F29843D67008F4036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA1C6E29843D67008F4036 /* Preview Assets.xcassets */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		68CA1C6429843D65008F4036 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68CA1C6729843D65008F4036 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
+		68CA1C6429843D65008F4036 /* Weathery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CA1C6729843D65008F4036 /* WeatheryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheryApp.swift; sourceTree = "<group>"; };
 		68CA1C6929843D65008F4036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68CA1C6B29843D67008F4036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68CA1C6E29843D67008F4036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		68CA1C5B29843D65008F4036 = {
 			isa = PBXGroup;
 			children = (
-				68CA1C6629843D65008F4036 /* WeatherApp */,
+				68CA1C6629843D65008F4036 /* Weathery */,
 				68CA1C6529843D65008F4036 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,21 +51,21 @@
 		68CA1C6529843D65008F4036 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				68CA1C6429843D65008F4036 /* WeatherApp.app */,
+				68CA1C6429843D65008F4036 /* Weathery.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68CA1C6629843D65008F4036 /* WeatherApp */ = {
+		68CA1C6629843D65008F4036 /* Weathery */ = {
 			isa = PBXGroup;
 			children = (
 				68CA1C7829844053008F4036 /* Views */,
 				68CA1C7529843E82008F4036 /* Managers */,
-				68CA1C6729843D65008F4036 /* WeatherAppApp.swift */,
+				68CA1C6729843D65008F4036 /* WeatheryApp.swift */,
 				68CA1C6B29843D67008F4036 /* Assets.xcassets */,
 				68CA1C6D29843D67008F4036 /* Preview Content */,
 			);
-			path = WeatherApp;
+			path = Weathery;
 			sourceTree = "<group>";
 		};
 		68CA1C6D29843D67008F4036 /* Preview Content */ = {
@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		68CA1C6329843D65008F4036 /* WeatherApp */ = {
+		68CA1C6329843D65008F4036 /* Weathery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68CA1C7229843D67008F4036 /* Build configuration list for PBXNativeTarget "WeatherApp" */;
+			buildConfigurationList = 68CA1C7229843D67008F4036 /* Build configuration list for PBXNativeTarget "Weathery" */;
 			buildPhases = (
 				68CA1C6029843D65008F4036 /* Sources */,
 				68CA1C6129843D65008F4036 /* Frameworks */,
@@ -110,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = WeatherApp;
+			name = Weathery;
 			productName = WeatherApp;
-			productReference = 68CA1C6429843D65008F4036 /* WeatherApp.app */;
+			productReference = 68CA1C6429843D65008F4036 /* Weathery.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 68CA1C5F29843D65008F4036 /* Build configuration list for PBXProject "WeatherApp" */;
+			buildConfigurationList = 68CA1C5F29843D65008F4036 /* Build configuration list for PBXProject "Weathery" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				68CA1C6329843D65008F4036 /* WeatherApp */,
+				68CA1C6329843D65008F4036 /* Weathery */,
 			);
 		};
 /* End PBXProject section */
@@ -167,7 +167,7 @@
 			files = (
 				68CA1C7E29844D96008F4036 /* WeatherManager.swift in Sources */,
 				68CA1C6A29843D65008F4036 /* ContentView.swift in Sources */,
-				68CA1C6829843D65008F4036 /* WeatherAppApp.swift in Sources */,
+				68CA1C6829843D65008F4036 /* WeatheryApp.swift in Sources */,
 				68CA1C7729843EA2008F4036 /* LocationManager.swift in Sources */,
 				68CA1C7C29844A81008F4036 /* LoadingView.swift in Sources */,
 				68CA1C7A298440F5008F4036 /* WelcomeView.swift in Sources */,
@@ -298,7 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Weathery/Preview Content\"";
 				DEVELOPMENT_TEAM = DKLSV282XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -327,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Weathery/Preview Content\"";
 				DEVELOPMENT_TEAM = DKLSV282XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -352,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68CA1C5F29843D65008F4036 /* Build configuration list for PBXProject "WeatherApp" */ = {
+		68CA1C5F29843D65008F4036 /* Build configuration list for PBXProject "Weathery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68CA1C7029843D67008F4036 /* Debug */,
@@ -361,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68CA1C7229843D67008F4036 /* Build configuration list for PBXNativeTarget "WeatherApp" */ = {
+		68CA1C7229843D67008F4036 /* Build configuration list for PBXNativeTarget "Weathery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68CA1C7329843D67008F4036 /* Debug */,
