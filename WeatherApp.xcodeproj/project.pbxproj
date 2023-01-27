@@ -11,6 +11,10 @@
 		68CA1C6A29843D65008F4036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C6929843D65008F4036 /* ContentView.swift */; };
 		68CA1C6C29843D67008F4036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA1C6B29843D67008F4036 /* Assets.xcassets */; };
 		68CA1C6F29843D67008F4036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA1C6E29843D67008F4036 /* Preview Assets.xcassets */; };
+		68CA1C7729843EA2008F4036 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C7629843EA2008F4036 /* LocationManager.swift */; };
+		68CA1C7A298440F5008F4036 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C79298440F5008F4036 /* WelcomeView.swift */; };
+		68CA1C7C29844A81008F4036 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C7B29844A81008F4036 /* LoadingView.swift */; };
+		68CA1C7E29844D96008F4036 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA1C7D29844D96008F4036 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		68CA1C6929843D65008F4036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68CA1C6B29843D67008F4036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68CA1C6E29843D67008F4036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68CA1C7629843EA2008F4036 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		68CA1C79298440F5008F4036 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		68CA1C7B29844A81008F4036 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		68CA1C7D29844D96008F4036 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		68CA1C6629843D65008F4036 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				68CA1C7829844053008F4036 /* Views */,
+				68CA1C7529843E82008F4036 /* Managers */,
 				68CA1C6729843D65008F4036 /* WeatherAppApp.swift */,
-				68CA1C6929843D65008F4036 /* ContentView.swift */,
 				68CA1C6B29843D67008F4036 /* Assets.xcassets */,
 				68CA1C6D29843D67008F4036 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				68CA1C6E29843D67008F4036 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68CA1C7529843E82008F4036 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1C7629843EA2008F4036 /* LocationManager.swift */,
+				68CA1C7D29844D96008F4036 /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		68CA1C7829844053008F4036 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68CA1C6929843D65008F4036 /* ContentView.swift */,
+				68CA1C79298440F5008F4036 /* WelcomeView.swift */,
+				68CA1C7B29844A81008F4036 /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CA1C7E29844D96008F4036 /* WeatherManager.swift in Sources */,
 				68CA1C6A29843D65008F4036 /* ContentView.swift in Sources */,
 				68CA1C6829843D65008F4036 /* WeatherAppApp.swift in Sources */,
+				68CA1C7729843EA2008F4036 /* LocationManager.swift in Sources */,
+				68CA1C7C29844A81008F4036 /* LoadingView.swift in Sources */,
+				68CA1C7A298440F5008F4036 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
