@@ -6,25 +6,29 @@
 //
 
 import SwiftUI
-
+import CoreLocation
 
     
 struct ContentView: View {
     @StateObject var locationManager = LocationManager()
     var weatherManager = WeatherManager()
+    
     @State var weather: ResponseBody?
+    @State var placemark: CLPlacemark?
     
     var body: some View {
         VStack {
-            
-            if let location = locationManager.location{
-                if let weather = weather{
-                    WeatherView(weather: weather)
+            if let location = locationManager.location {
+                let currentLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
+                if let weather = weather {
+                    WeatherView(weather: weather, placemark: placemark?.name ?? "Lisbon")
                 } else {
                     LoadingView()
                         .task {
-                            do{
-                                try await weatherManager.getCurrentWeather(latitude:location.latitude, longitude: location.longitude)
+                            do {
+                                weather = try await weatherManager.getCurrentWeather(latitude:location.latitude, longitude: location.longitude)
+                                let placemarkResult = try await locationManager.reverseGeocodeLocation(location: currentLocation)
+                                placemark = placemarkResult.first
                             } catch {
                                 print("Error getting weather: \(error)")
                             }
@@ -49,3 +53,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
